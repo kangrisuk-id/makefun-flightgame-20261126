@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewater Airlift — a bush-plane courier game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a101c; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+  #wrap { width: min(100vw, calc(100vh * 16 / 9)); }
+  canvas { display: block; width: 100%; height: auto; background: #1f6fd0; }
+  #test-result { display: none; }
+  .hint { color: #8fa3bf; text-align: center; font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div class="hint">Tidewater Airlift — keyboard: arrows/WASD fly, Space airbrake, P pause, R restart, M mute. Mouse: hold and point to steer.</div>
+  </div>
+  <div id="test-result"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
